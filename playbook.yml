@@ -1,0 +1,5 @@
+---
+- name: use a dedicated Ansible module
+  hosts: all
+  roles:
+    - { role: module }
