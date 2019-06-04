@@ -65,7 +65,7 @@ def github_repo_absent(data=None):
     if result.status_code == 204:
         return False, True, {"status": "SUCCESS"}
     if result.status_code == 404:
-    	result = {"status": result.status_code, "data": result.json()}
+        result = {"status": result.status_code, "data": result.json()}
         return False, False, result
     else:
         result = {"status": result.status_code, "data": result.json()}
